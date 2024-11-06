@@ -13,7 +13,7 @@ class PredictPipeline:
         try:
             # Paths for model and processor
             model_path = os.path.join("artifacts", "trained_model", "model.pkl")
-            preprocessor_path = os.path.join("artifacts", "ingested", "top_features_processor.pkl")
+            preprocessor_path = os.path.join("artifacts", "ingested", "processor.pkl")
             
             print("Before Loading")
             model = load_object(file_path=model_path)
