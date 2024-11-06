@@ -1,0 +1,26 @@
+[2024-11-04 11:28:45,449 ] werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.222.98:5000
+[2024-11-04 11:28:45,450 ] werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-11-04 11:28:45,782 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 11:28:45] "GET / HTTP/1.1" 200 -
+[2024-11-04 11:28:45,829 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 11:28:45] "[33mGET /style.css HTTP/1.1[0m" 404 -
+[2024-11-04 11:29:04,756 ] app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\Python Projects\Real-Estate-MLOPs-Project\app.py", line 22, in predict_datapoint
+    data = CustomData(
+           ^^^^^^^^^^^
+TypeError: CustomData.__init__() missing 2 required positional arguments: 'rent_zestimate' and 'price_change'
+[2024-11-04 11:29:04,759 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 11:29:04] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -

@@ -1,0 +1,143 @@
+[2024-11-04 05:54:06,139 ] werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.165.98:5000
+[2024-11-04 05:54:06,139 ] werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-11-04 05:55:45,093 ] werkzeug - ERROR - 127.0.0.1 - - [04/Nov/2024 05:55:45] code 400, message Bad request version ('þxØïQÙ,E$GúK')
+[2024-11-04 05:55:45,093 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 05:55:45] "[31m[1m\x16\x03\x01\x06 \x01\x00\x06\x9c\x03\x03\x97)y\x11\x16*5¶{'J­}\x7fD\x10Ûv[\x16¯JäÝÉk\x1c@BoØ­ \x7f\x93Kä,\x90ö§Ñf\x90Sð\x04\x14We©½Yt«\x80ß\x03g\x9a\x96d\x06\x15:\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063::\x00\x00Di\x00\x05\x00\x03\x02h2\x00-\x00\x02\x01\x01þ\x0d\x00º\x00\x00\x01\x00\x01+\x00 æ^\x0bÿ\x88ÖN¼\x97ù^Ü\x95¯³s¨\x03Ë\x8fiÀË\x15\x8dPÚ4\x0fà\x1e]\x00\x90Ã2)Æ#\x0fÐy4"\x9crDõ/\x85Kb\x9dô¦\x86æ#±T¢©2w&\x16\x05F\x9f©£gñh>=hV\x0dèZ\x8cÓ\x0eJ\x97ÃJM[é¶ù[\x92,?î\x92·Ît§\x8e\x07TGtS§¨#Ï\x1e\x1fLK\x90þG\x04ýJBrÙ\x91\x8au\x0eC1ù\x83¡U þxØïQÙ,E$GúK[0m" 400 -
+[2024-11-04 05:55:45,095 ] werkzeug - ERROR - 127.0.0.1 - - [04/Nov/2024 05:55:45] code 400, message Bad request version (',\x99Ýv\x8fc\x15&~j@{\x9d>\x81¼ÿÇ\x8e;I')
+[2024-11-04 05:55:45,132 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 05:55:45] "[31m[1m\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03ñ½ô\x1b"|ÜÀ\x1fÖ\x93°°¶k.f\x14\x8bb»:\x85\x1b\x8f¸\x181\x91ò=ÿ Ø\x8f1\x98\x1a\x8969ÑnáÉ\x17ÆMÊ}\x17NpnÊ¨d\x7f\x81ém-/\x9d\x7f\x00 ::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93\x8a\x8a\x00\x00þ\x0d\x01\x1a\x00\x00\x01\x00\x01¯\x00 ,\x99Ýv\x8fc\x15&~j@{\x9d>\x81¼ÿÇ\x8e;I[0m" 400 -
+[2024-11-04 05:55:45,166 ] werkzeug - ERROR - 127.0.0.1 - - [04/Nov/2024 05:55:45] code 400, message Bad request version ('sûì¥\x0eê')
+[2024-11-04 05:55:45,166 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 05:55:45] "[31m[1m\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03U½ó.\x14_\x09U°6®\x17õàO)ßË°­!>\x1aã\x83Ë\x13Íè8 g \x9fÀz\x08Å¦\x7f\x06V\x89lÿ\x89\x17úÐí\x8eÌò2\x9c\x17\x89\x1f\x07Eª÷\x94Ö\x8b\x00 ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06SJJ\x00\x00ÿ\x01\x00\x01\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x003\x04ï\x04íJJ\x00\x01\x00c\x99\x04Àë\x19\x99B\x9bërÆÆ©g2¤Ó¯h\x16.úN[\x91Ú\x02üS]\x00W|X\x03+ôÂÈ´,,{PV"\x1f&Ë\x16-â\x82ý\x86\x03\x02\x91^\x96\x9c=Dx2ã¸%È¹\x0f-H\x82o³\x8f\x1fW\x00ê¸¤\x9a³\x8d\x16ø\x8eX\x86P\x0b\x0c®\x12³r¹¸µzÖ¯\x01\x16,7çuû¹\x7fÕ£tÓ·V\x97\x99Ede\x83RCw¡YS\x8aÌ/Ãà}O\x03há\x1b(P±\x87ÆSºÙL\x11èðÃ(Ü+ósqi\x18Ï§ÊRf\x15\x92\x92\x14O\x89yQdÁk¥\x03É8\x8856\x14iÞôa.##É\x8b\x10\x00Vy\x9c\x08\x82\x0dj\x89\x98h\x96/Ò¤§ÐÊâ\\\x8d£2ZfU3¢\x1bz)\x94±¼9µ`ØÊ\x1f1&W\x80ÅÎág\x0f*A@$\x13ÙÕ3ëºu¶\x10B-\x12\x00\x18\x85M\x10Ö\x1d\x07ÃÆ\x0d©Í¹Ê\x0fRz\x8f¶\x126sa©fÌ\x1d@Ë\x8dâ\x13\x11ò\x94\x9e\x0e8\x04øü\x16f\x8c\x04Þ)\x04Q`£\x15ç°\x17\x18²L×\x99\x8dL\\ªz\x1e\x92\x81\x98\x18¤vb\x1b\x11\x9cT\x9e\x8fK¨\x13\x09D\x03ÙZp7\x8cÈ\x01¨mËÆ&\x8ac\x1fxZ!Ð\x8f­É]åË*ª nØ»\x95~Ðz\x9cl\x82\x81Ã\x8b`ú}Ä´¸îçr\x15£\x18VÀ\x07ml¿-E\x16G\x14u\x08Á\x82\x95¸ Í¬vìËvKH\x16¿X¿\x7f2\x1fí»%\x8c¨\x98ê·¾çê²b¬\x8c\x8aº0Éx\x81n[\x1eª¥>Òµ´\x91`j\x86ôQ³c<zûKÚú\x1f¡x\x9aêæ¤*ê\x0c\x10ªÂ>Ä¨Fx\x81vÐ\x16=\x92\x08%\x9bC\x9cÅy\x0eÇ\x1eìÓ¨=ÊjßÓ°¼\x91\x9a6¥\x16dé\x04¹áAsR[w,E§8\x00HdI\x85ò\x85pxÀÛ\x10ÆÞD¿ø«&\x82À¨Ð³\x03Þ`\x93/$tx¥h\x08Y=3\x02}¯"q)G\x94Ê\x92]\x03£k\x9eáÍ\x04¦Bñ³9¿"mC¡W£Â"¦Á\x0fj\x868>Emá\x10£#JCùÛ\x9bj1)Re\x15\x96é»×F\x17\x13õ\x90\x8fÇK\x0d\x11P5Ñk\x8c)Ï\x18zYÑçvÕc\x98´Ì\x91ÿ63\x84\x14R~5\x1cÔæe±e\x0f>£ÅU\x89p\x929\x18¸x Ky<è\x05@ä\x99?@@i"')Ï·¦Æªo¥\x97¢\x1aW\x15ê\x07{`z\x0b­ÔºS\x8a¦÷`ÊKHe\x8bù\x03r¦ \x02[uô²Wa\x01\x86Ú7D#\x80³mÌ´7zA-ósõ\x97\x9b\x84\x10\x03\x1cÙ\x8e\x07\x84eÒ6Wv\x04(Á\x06w@\x18?Ùónh\x14\x96\x8aºD¤\x8b:\x12û5\x81ì£D$$\x00\x08\x9c\x07¸¿\x0fg\x19\x1eÄ\x02º|Å8µ\x9an¦eÒÚ®eÅMgtX{\x80ÈaxXÑ4ÁÌ\x80¹á©pL\x81&ûZ\x94 6\x16\x82"K6Z\x04\x17ë\x88¬ç\x17%&J\x0fðº\x8aóÁ\x80\x96Æ}7,ÁW2â4\x08þò\x8dk8\x92ðYÌ¤\x06|n)>RÇ!v0\x8brt°#J½â\x88¿ø\x98\x16p\x14\x84Á\x878)ú0&àe\x9d\x13#ï\x97³\x19d%;\x9b)üR6Ot°!ó¯\x02\x07b}J@ö\x99k\x03x\x97¯¸~:á-yE¬ìf,ÛI\x04\x8d\x8a\x9750¢÷\x15Pg\x00HÔô\x8fËø¿\x85\x10¨\x982¡`±QÖÖÇÆÜ\x98­\x9a\x7f2òÂ/Â\x09ák\x96ôÓZw\x17¥\x87P<Ç\x13\x1f\x83¢\x89J\x81\x05ëë\x0f\x09f³×3\\\x83i\x860ò·\x82)~wH°R\x95©Â\x14È¯\x9bm\x9cÔDä³w\x18\x99P\x8dat"«\x85 Cep0{QÐ\x1e^ä\x99ÒÓPHf\x98 ô\x190°»AZnà\x99X×É\x15\x09hpa\x98\x12\x01e5 h1\x82\x96\x10\x97Ve\x07[XzX\x9c \x11y\x8dx\x81\x1b\x06l\x00¶;®h4Í7!/7Gñ\x8b,Ä\x99¾\x02Eó{ãÍXYf\x98\x19u:\x11Vß\x004©¾ÆY\x17T-¹\x1f\x15\x11PùÏ\x00\x1d\x00 WÓDçÞo­Æ¸\x04\x04ºp;zòÜõ\\\x84$Æ©\x14Ðæ<>b\x82öc\x00-\x00\x02\x01\x01Di\x00\x05\x00\x03\x02h2\x00\x17\x00\x00\x00\x0b\x00\x02\x01\x00\x00\x12\x00\x00þ\x0d\x00Ú\x00\x00\x01\x00\x01ý\x00 óA\x88YÁ;þ-zQ\x84¾s­é¼ñf\x14\x10±¨>¯\x0bsûì¥\x0eê[0m" 400 -
+[2024-11-04 05:55:45,167 ] werkzeug - ERROR - 127.0.0.1 - - [04/Nov/2024 05:55:45] code 400, message Bad request version ('6Ä\x13\x17Dù\x123óùM\x06')
+[2024-11-04 05:55:45,167 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 05:55:45] "[31m[1m\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03ÂK+gÁâÛ\x91\x93pÞ\x7f\x86j\x7f£*Mô#Kÿ5«ò9G~\x8b"\x9cÈ m'y«IöÆ\x0d\x86è¤EÍ#k\x81!\x8b¾\x7ft\x1aT,Ç6Ç¨½Ú­\x87\x00 ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93\x1a\x1a\x00\x00\x00\x12\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x003\x04ï\x04í**\x00\x01\x00c\x99\x04Àö\x1d\x0f´\x99N\x15á \x02Z;«\x14(\x9bG\x10ð²\x89Ç\x0eIÔ|!ÒÈ\x09í7\x9b\x9c2¤\x02\x13Ë\x8b\x00\x103X\x9e\x9a\x8f~\x82­hùCIP\x9cfòHÏKP\x82\x15HI\x82nÆÃ(\\H\x8f²\x09rQUS(\x0b\x0b\x1d'Tâqe*"È25D\x18Õ\x8a½<hÏleè\x18sì \x04ÇÐ\x80Ì2\x10ã\x92 #ÂT\x96ò\x98\x87Ø{SÐR¾w)`1¼û[=\x1bF£Kç'\x82%6\x0c:\x12³\x9c\x81×ÆM\x02F\x0c\x91\x13\x1b\x8eèZ\x9føy\x89É\x8c\x0c6Ä\x13\x17Dù\x123óùM\x06[0m" 400 -
+[2024-11-04 05:56:12,412 ] werkzeug - ERROR - 127.0.0.1 - - [04/Nov/2024 05:56:12] code 400, message Bad request version ('$É9^¿\x88%¤#ñDÞ\x8eßÞ49\\\x1b.¾Ðè¬q¡\x89\x8eM\x00')
+[2024-11-04 05:56:12,412 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 05:56:12] "[31m[1m\x16\x03\x01\x06 \x01\x00\x06\x9c\x03\x03=¸Å\x97oÍ·\x17\x96À-\x0c^\x99¿s\x85jºgQ\x05å2·\x04\x89_\x96\x9eù© ÍX\x0d$É9^¿\x88%¤#ñDÞ\x8eßÞ49\\\x1b.¾Ðè¬q¡\x89\x8eM\x00 [0m" 400 -
+[2024-11-04 05:56:12,413 ] werkzeug - ERROR - 127.0.0.1 - - [04/Nov/2024 05:56:12] code 400, message Bad request version (';éådüT\x06')
+[2024-11-04 05:56:12,413 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 05:56:12] "[31m[1m\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03\x86Ù\x9bÏâ\x19«MÜ\x19\x0d-ü\x13ÕÀ*Pc\x01\x1dRc\x04Qf~O/B\x83\x9e ï\x8aÒ\x8aUåÙF\x16\x84-²\x8b\x07Ã,N¤@b¦«`t"¾\x1eÁOPT©\x00 **\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sjj\x00\x00\x00\x0b\x00\x02\x01\x00\x00+\x00\x07\x06**\x03\x04\x03\x03þ\x0d\x00ú\x00\x00\x01\x00\x010\x00 ;éådüT\x06[0m" 400 -
+[2024-11-04 05:56:12,414 ] werkzeug - ERROR - 127.0.0.1 - - [04/Nov/2024 05:56:12] code 400, message Bad request version ('#5<ÕI\x1aðÏ\x96¦Ê\x8aèä;¤:\x84ð\x9fRÙ%öf·OXTúë¦*\xad')
+[2024-11-04 05:56:12,414 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 05:56:12] "[31m[1m\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03®¶½¤/ðîÒÀº*¸@wU¯-\x11¦\x09%}YA$h\x96·À+\x1c} \x99¡\x10\x967\x8aÆ\x12\x81#«Ô\x10\x07¶m¸ÓnXæ\x08;JÅ\x16O\x1f&Þ¨È\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93êê\x00\x00\x00\x0b\x00\x02\x01\x00Di\x00\x05\x00\x03\x02h2þ\x0d\x01\x1a\x00\x00\x01\x00\x01®\x00 ½ÏRGI4X\x9bpG|x¬a\x1b?\x00$»\x11Î\x7f\x18²\x19¸e0piz4\x00ð\x1b\x1eÌ"nÇù\x0fÖú\x85Ü¥üù\x86î=I;\x8c¢#±L+7\x9arêy\x1e\x7f³CDà\x11Ûf\x0bcñKy\x9f\x89·k\x1aYµ2\x87\x9cÐ\x86:Ã*\x82j\x92:<)}ýÆp\x89ä¼ï°\x94¾\x9d§u\x94R\x9bKà^%\x9dp\x0dó\x8fîµ\x19´¬Ö\x8fòêJ¡­{§\x89+~¤ä\x04!Ùì\x031¿\x16\x9boÉ]þó%GN\x16X\x85Lâ­ #5<ÕI\x1aðÏ\x96¦Ê\x8aèä;¤:\x84ð\x9fRÙ%öf·OXTúë¦*­[0m" 400 -
+[2024-11-04 05:56:12,415 ] werkzeug - ERROR - 127.0.0.1 - - [04/Nov/2024 05:56:12] code 400, message Bad request version ('Ð¼ÉÝ2Ä*9þÅêcqÊuY/S=ËD\x81Mq')
+[2024-11-04 05:56:12,415 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 05:56:12] "[31m[1m\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03"+\x9f0)@8Æ\x83\x1d\x1f&7ý3\x82\x19Ñ\x9cdU«|\x92óm\x1a-F\x13c\x1f Ð¼ÉÝ2Ä*9þÅêcqÊuY/S=ËD\x81Mq[0m" 400 -
+[2024-11-04 05:56:12,419 ] werkzeug - ERROR - 127.0.0.1 - - [04/Nov/2024 05:56:12] code 400, message Bad request version ('\x91\x00')
+[2024-11-04 05:56:12,419 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 05:56:12] "[31m[1m\x16\x03\x01\x06 \x01\x00\x06\x9c\x03\x031ô¡\x9ae\x14dÿõ\x1e4\x850±\x98\x97\x05\x88°\x17\x0b&§[â¨ç·OJoã ÷\x14;rP\x8bì<$\x02Ù÷Ô\x91Áç\x12"®rË¹A¨¢®'Ã\x14²\x0c\x91\x00 [0m" 400 -
+[2024-11-04 05:56:12,421 ] werkzeug - ERROR - 127.0.0.1 - - [04/Nov/2024 05:56:12] code 400, message Bad request version ('\x86\x87©')
+[2024-11-04 05:56:12,421 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 05:56:12] "[31m[1m\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03Å·Ã\x891\x01Å\x14á^ô\x09éê¢æûSVµ\x00òÂ\x9c\x10\x11§\x9b]ä\x82z b°¥pF\x8b×\x19\x12\x0dy!6øhØ®*®$\x8f©l\x1a²ÎÉÈÀ¬íF\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s::\x00\x00Di\x00\x05\x00\x03\x02h2\x003\x04ï\x04íªª\x00\x01\x00c\x99\x04À\x09+8kpc|1æ\x14§)!¡þ\x13\x0e!\x9b\x91¥q\x9fn^³L{¾¸µ\x185<\x1bN¥\x9aËU\x9d\x968¿ÚzÃ¾ãÍ[V\x08>\x10%É#\x83ó¦Áªáµcá\x1e2l\x10´PÇ¥ \x86\x87©[0m" 400 -
+[2024-11-04 05:57:47,663 ] app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\Python Projects\Real-Estate-MLOPs-Project\app.py", line 16, in index
+    return render_template('index.html')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+[2024-11-04 05:57:47,728 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 05:57:47] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2024-11-04 05:57:48,473 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 05:57:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-11-04 06:01:51,487 ] app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\Python Projects\Real-Estate-MLOPs-Project\app.py", line 16, in index
+    return render_template('home.html')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+[2024-11-04 06:01:51,512 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 06:01:51] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2024-11-04 06:01:53,542 ] app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\Python Projects\Real-Estate-MLOPs-Project\app.py", line 16, in index
+    return render_template('home.html')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+[2024-11-04 06:01:53,543 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 06:01:53] "[35m[1mGET / HTTP/1.1[0m" 500 -

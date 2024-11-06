@@ -1,0 +1,62 @@
+[2024-11-04 10:14:59,608 ] werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.222.98:5000
+[2024-11-04 10:14:59,609 ] werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-11-04 10:15:06,581 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 10:15:06] "GET / HTTP/1.1" 200 -
+[2024-11-04 10:15:06,636 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 10:15:06] "[33mGET /style.css HTTP/1.1[0m" 404 -
+[2024-11-04 10:15:19,476 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 10:15:19] "GET /predictdata HTTP/1.1" 200 -
+[2024-11-04 10:15:19,517 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 10:15:19] "[33mGET /style.css HTTP/1.1[0m" 404 -
+[2024-11-04 10:15:22,116 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 10:15:22] "GET /predictdata HTTP/1.1" 200 -
+[2024-11-04 10:15:22,148 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 10:15:22] "[33mGET /style.css HTTP/1.1[0m" 404 -
+[2024-11-04 10:15:47,714 ] root - INFO - Entered the load_object method of utils
+[2024-11-04 10:15:47,758 ] root - INFO - Exited the load_object method of utils
+[2024-11-04 10:15:47,758 ] root - INFO - Entered the load_object method of utils
+[2024-11-04 10:15:47,762 ] root - INFO - Exited the load_object method of utils
+[2024-11-04 10:15:47,765 ] app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\Python Projects\Real-Estate-MLOPs-Project\real_estate\pipeline\prediction_pipeline.py", line 23, in predict
+    data_scaled = preprocessor.transform(features)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\sklearn\utils\_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\sklearn\preprocessing\_data.py", line 1045, in transform
+    X = self._validate_data(
+        ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\sklearn\base.py", line 633, in _validate_data
+    out = check_array(X, input_name="X", **check_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\sklearn\utils\validation.py", line 1012, in check_array
+    array = _asarray_with_order(array, order=order, dtype=dtype, xp=xp)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\sklearn\utils\_array_api.py", line 745, in _asarray_with_order
+    array = numpy.asarray(array, order=order, dtype=dtype)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\pandas\core\generic.py", line 2153, in __array__
+    arr = np.asarray(values, dtype=dtype)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'CONDO'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\Python Projects\Real-Estate-MLOPs-Project\app.py", line 42, in predict_datapoint
+    results = predict_pipeline.predict(pred_df)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\Python Projects\Real-Estate-MLOPs-Project\real_estate\pipeline\prediction_pipeline.py", line 28, in predict
+    raise realEstateException(e, sys)
+real_estate.exception.realEstateException: Error occurred python script name [C:\Users\HP\Documents\Python Projects\Real-Estate-MLOPs-Project\real_estate\pipeline\prediction_pipeline.py] line number [23] error message [could not convert string to float: 'CONDO']
+[2024-11-04 10:15:47,786 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 10:15:47] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -

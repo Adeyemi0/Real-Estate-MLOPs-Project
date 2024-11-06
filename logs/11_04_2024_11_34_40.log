@@ -1,0 +1,13 @@
+[2024-11-04 11:34:43,058 ] werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.222.98:5000
+[2024-11-04 11:34:43,058 ] werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-11-04 11:35:38,021 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 11:35:38] "GET / HTTP/1.1" 200 -
+[2024-11-04 11:35:38,058 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 11:35:38] "[33mGET /style.css HTTP/1.1[0m" 404 -
+[2024-11-04 11:36:04,665 ] root - INFO - Entered the load_object method of utils
+[2024-11-04 11:36:04,893 ] root - INFO - Exited the load_object method of utils
+[2024-11-04 11:36:04,893 ] root - INFO - Entered the load_object method of utils
+[2024-11-04 11:36:04,896 ] root - INFO - Exited the load_object method of utils
+[2024-11-04 11:36:04,909 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 11:36:04] "POST /predictdata HTTP/1.1" 200 -
+[2024-11-04 11:36:04,958 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 11:36:04] "[33mGET /style.css HTTP/1.1[0m" 404 -

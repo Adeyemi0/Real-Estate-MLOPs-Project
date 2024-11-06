@@ -1,0 +1,66 @@
+[2024-11-04 11:01:14,236 ] root - INFO - Entered the data ingestion method or component
+[2024-11-04 11:01:14,343 ] google.auth._default - DEBUG - Checking geocode-345718-d1551db2f8c6.json for explicit credentials as part of auth process...
+[2024-11-04 11:01:14,343 ] pydata_google_auth.auth - DEBUG - Error getting default credentials: File geocode-345718-d1551db2f8c6.json was not found.
+[2024-11-04 11:01:14,344 ] google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+[2024-11-04 11:01:14,347 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+[2024-11-04 11:01:15,197 ] urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+[2024-11-04 11:01:15,198 ] pandas_gbq.query - DEBUG - Requesting query... 
+[2024-11-04 11:01:15,198 ] google.cloud.bigquery.opentelemetry_tracing - DEBUG - This service is instrumented using OpenTelemetry. OpenTelemetry or one of its components could not be imported; please add compatible versions of opentelemetry-api and opentelemetry-instrumentation packages in order to get BigQuery Tracing data.
+[2024-11-04 11:01:15,199 ] urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+[2024-11-04 11:01:15,200 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): bigquery.googleapis.com:443
+[2024-11-04 11:01:18,743 ] urllib3.connectionpool - DEBUG - https://bigquery.googleapis.com:443 "POST /bigquery/v2/projects/geocode-345718/queries?prettyPrint=false HTTP/11" 200 None
+[2024-11-04 11:01:23,648 ] urllib3.connectionpool - DEBUG - https://bigquery.googleapis.com:443 "GET /bigquery/v2/projects/geocode-345718/jobs/job_9r-5yKiD2K9RAIRolyy_FY8cRlk1?projection=full&location=US&prettyPrint=false HTTP/11" 200 None
+[2024-11-04 11:01:23,713 ] pandas_gbq.query - DEBUG - Query done.
+
+[2024-11-04 11:01:24,166 ] urllib3.connectionpool - DEBUG - https://bigquery.googleapis.com:443 "GET /bigquery/v2/projects/geocode-345718/datasets/_c16a6afdb9763f79a2aaa849fb4a8d49b9adfe63/tables/anonacfeb8f5aaaa8cd2f4b045f5781e4f9301d1b71899d896cf5006c50ae00b6e45?prettyPrint=false HTTP/11" 200 None
+[2024-11-04 11:01:26,049 ] urllib3.connectionpool - DEBUG - https://bigquery.googleapis.com:443 "GET /bigquery/v2/projects/geocode-345718/queries/job_9r-5yKiD2K9RAIRolyy_FY8cRlk1?pageToken=BEYV3HXWSIAQAAASA4EAAEEAQCAAKGQKBD2Y6AIQ737777YHECYK4FKKTMBAU3AKDEFA4Z3FN5RW6ZDFFUZTINJXGE4BC3DBO2U7KAAAAAJCSX3DGE3GCNTBMZSGEOJXGYZWMNZZMEZGCYLBHA2DSZTCGRQTQZBUHFRDSYLEMZSTMMY2EQYGCNTCG4YTIMJNMY3TENBNGQ2WCYRNHA2WIMBNGQ2GGNBRGEZDSYRVGU4RERDBNZXW4YLDMZSWEODGGVQWCYLBHBRWIMTGGRRDANBVMY2TOOBRMU2GMOJTGAYWIMLCG4YTQOJZMQ4DSNTDMY2TAMBWMM2TAYLFGAYGENTFGQ2RUZLBMNTGKYRYMY2WCYLBME4GGZBSMY2GEMBUGVTDKNZYGFSTIZRZGMYDCZBRMI3TCOBZHFSDQOJWMNTDKMBQGZRTKMDBMUYDAYRWMU2DKIZSHA4DAZBYGVRS2NTBGM2S2NBWGJSC2YRTMJSC2ZTCME3DQYRXG5RGENBQ&fields=jobReference%2CtotalRows%2CpageToken%2Crows&location=US&formatOptions.useInt64Timestamp=True&prettyPrint=false HTTP/11" 200 None
+[2024-11-04 11:01:27,369 ] pandas_gbq.gbq - DEBUG - Got 25461 rows.
+
+[2024-11-04 11:01:27,369 ] pandas_gbq.gbq - INFO - Total time taken 12.17 s.
+Finished at 2024-11-04 11:01:27.
+[2024-11-04 11:01:27,369 ] root - INFO - Fetched the dataset from BigQuery as dataframe
+[2024-11-04 11:01:27,893 ] root - INFO - Saved the full dataset to feature_store/real_estate.csv
+[2024-11-04 11:01:27,894 ] root - INFO - Train test split initiated
+[2024-11-04 11:01:28,434 ] root - INFO - Ingestion of the data is completed
+[2024-11-04 11:01:29,374 ] root - INFO - Columns after filtering and cleaning: ['days_on_zillow', 'zestimate', 'rent_zestimate', 'area', 'beds', 'baths', 'price_change', 'tax_assessed_value', 'lot_area_value', 'home_type', 'price']
+[2024-11-04 11:01:29,630 ] root - INFO - Final input features: ['days_on_zillow', 'zestimate', 'rent_zestimate', 'area', 'beds', 'baths', 'price_change', 'tax_assessed_value', 'lot_area_value', 'home_type']
+[2024-11-04 11:01:29,867 ] root - INFO - Split training and test input data
+[2024-11-04 11:01:29,869 ] root - INFO - Training Random Forest
+[2024-11-04 11:01:32,807 ] root - INFO - Top 8 features for Random Forest: ['zestimate', 'tax_assessed_value', 'area', 'home_type', 'lot_area_value', 'baths', 'days_on_zillow', 'beds']
+[2024-11-04 11:01:32,808 ] root - INFO - Training Decision Tree
+[2024-11-04 11:01:32,846 ] root - INFO - Top 8 features for Decision Tree: ['zestimate', 'home_type', 'area', 'tax_assessed_value', 'baths', 'lot_area_value', 'days_on_zillow', 'rent_zestimate']
+[2024-11-04 11:01:32,847 ] root - INFO - Training Gradient Boosting
+[2024-11-04 11:01:33,730 ] root - INFO - Top 8 features for Gradient Boosting: ['tax_assessed_value', 'zestimate', 'area', 'home_type', 'baths', 'lot_area_value', 'rent_zestimate', 'days_on_zillow']
+[2024-11-04 11:01:33,730 ] root - INFO - Training Linear Regression
+[2024-11-04 11:01:34,279 ] root - WARNING - Linear Regression does not support feature importances.
+[2024-11-04 11:01:34,279 ] root - INFO - Training XGBRegressor
+[2024-11-04 11:01:34,852 ] root - INFO - Top 8 features for XGBRegressor: ['home_type', 'zestimate', 'tax_assessed_value', 'baths', 'area', 'lot_area_value', 'beds', 'days_on_zillow']
+[2024-11-04 11:01:34,852 ] root - INFO - Training CatBoosting Regressor
+[2024-11-04 11:01:41,720 ] root - INFO - Top 8 features for CatBoosting Regressor: ['zestimate', 'tax_assessed_value', 'lot_area_value', 'area', 'home_type', 'baths', 'rent_zestimate', 'days_on_zillow']
+[2024-11-04 11:01:41,720 ] root - INFO - Training AdaBoost Regressor
+[2024-11-04 11:01:42,046 ] root - INFO - Top 8 features for AdaBoost Regressor: ['area', 'home_type', 'baths', 'lot_area_value', 'tax_assessed_value', 'zestimate', 'days_on_zillow', 'beds']
+[2024-11-04 11:01:42,046 ] root - INFO - Evaluating model: Random Forest
+[2024-11-04 11:01:42,047 ] root - WARNING - No parameters provided for Random Forest. Using default model.
+[2024-11-04 11:01:44,489 ] root - INFO - Random Forest - Train R2: 0.9876570903407585, Test R2: 0.8998909616008781
+[2024-11-04 11:01:44,489 ] root - INFO - Evaluating model: Decision Tree
+[2024-11-04 11:01:44,489 ] root - WARNING - No parameters provided for Decision Tree. Using default model.
+[2024-11-04 11:01:44,527 ] root - INFO - Decision Tree - Train R2: 0.9999804826794693, Test R2: 0.8646864521350697
+[2024-11-04 11:01:44,527 ] root - INFO - Evaluating model: Gradient Boosting
+[2024-11-04 11:01:44,527 ] root - WARNING - No parameters provided for Gradient Boosting. Using default model.
+[2024-11-04 11:01:45,549 ] root - INFO - Gradient Boosting - Train R2: 0.8252143111442384, Test R2: 0.766861259713936
+[2024-11-04 11:01:45,549 ] root - INFO - Evaluating model: Linear Regression
+[2024-11-04 11:01:45,549 ] root - WARNING - No parameters provided for Linear Regression. Using default model.
+[2024-11-04 11:01:45,663 ] root - INFO - Linear Regression - Train R2: 0.3383696745536797, Test R2: 0.4436898365506995
+[2024-11-04 11:01:45,663 ] root - INFO - Evaluating model: XGBRegressor
+[2024-11-04 11:01:45,663 ] root - WARNING - No parameters provided for XGBRegressor. Using default model.
+[2024-11-04 11:01:45,895 ] root - INFO - XGBRegressor - Train R2: 0.9911045555459447, Test R2: 0.9035128470058661
+[2024-11-04 11:01:45,896 ] root - INFO - Evaluating model: CatBoosting Regressor
+[2024-11-04 11:01:45,896 ] root - WARNING - No parameters provided for CatBoosting Regressor. Using default model.
+[2024-11-04 11:01:50,711 ] root - INFO - CatBoosting Regressor - Train R2: 0.969502911864186, Test R2: 0.898329268549225
+[2024-11-04 11:01:50,711 ] root - INFO - Evaluating model: AdaBoost Regressor
+[2024-11-04 11:01:50,711 ] root - WARNING - No parameters provided for AdaBoost Regressor. Using default model.
+[2024-11-04 11:01:51,009 ] root - INFO - AdaBoost Regressor - Train R2: 0.4719460484789646, Test R2: 0.2304153140942412
+[2024-11-04 11:01:51,010 ] root - INFO - Best found model using top features: XGBRegressor
+[2024-11-04 11:01:51,010 ] root - INFO - Entered the save_object method of utils
+[2024-11-04 11:01:51,016 ] root - INFO - Exited the save_object method of utils
+[2024-11-04 11:01:51,031 ] root - INFO - Pipeline execution completed successfully

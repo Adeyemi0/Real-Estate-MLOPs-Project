@@ -1,0 +1,20 @@
+[2024-11-04 12:52:09,792 ] werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.222.98:5000
+[2024-11-04 12:52:09,792 ] werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-11-04 12:52:28,527 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 12:52:28] "GET / HTTP/1.1" 200 -
+[2024-11-04 12:52:37,301 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 12:52:37] "GET / HTTP/1.1" 200 -
+[2024-11-04 12:52:41,535 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 12:52:41] "GET / HTTP/1.1" 200 -
+[2024-11-04 12:53:03,156 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 12:53:03] "GET / HTTP/1.1" 200 -
+[2024-11-04 12:53:03,718 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 12:53:03] "GET / HTTP/1.1" 200 -
+[2024-11-04 12:53:04,003 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 12:53:04] "GET / HTTP/1.1" 200 -
+[2024-11-04 12:53:04,256 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 12:53:04] "GET / HTTP/1.1" 200 -
+[2024-11-04 12:54:22,113 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 12:54:22] "GET /predictdata HTTP/1.1" 200 -
+[2024-11-04 12:54:24,203 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 12:54:24] "GET /predictdata HTTP/1.1" 200 -
+[2024-11-04 12:54:25,277 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 12:54:25] "GET /predictdata HTTP/1.1" 200 -
+[2024-11-04 12:54:25,362 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 12:54:25] "GET /predictdata HTTP/1.1" 200 -
+[2024-11-04 12:54:25,502 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 12:54:25] "GET /predictdata HTTP/1.1" 200 -
+[2024-11-04 12:54:25,602 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 12:54:25] "GET /predictdata HTTP/1.1" 200 -
+[2024-11-04 12:54:25,712 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 12:54:25] "GET /predictdata HTTP/1.1" 200 -
+[2024-11-04 12:54:25,951 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 12:54:25] "GET /predictdata HTTP/1.1" 200 -

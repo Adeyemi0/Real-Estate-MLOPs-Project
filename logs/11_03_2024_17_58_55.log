@@ -1,0 +1,64 @@
+[2024-11-03 17:58:56,528 ] root - INFO - Entered the data ingestion method or component
+[2024-11-03 17:58:56,636 ] google.auth._default - DEBUG - Checking geocode-345718-d1551db2f8c6.json for explicit credentials as part of auth process...
+[2024-11-03 17:58:56,637 ] pydata_google_auth.auth - DEBUG - Error getting default credentials: File geocode-345718-d1551db2f8c6.json was not found.
+[2024-11-03 17:58:56,637 ] google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+[2024-11-03 17:58:56,641 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+[2024-11-03 17:59:21,248 ] urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+[2024-11-03 17:59:21,252 ] pandas_gbq.query - DEBUG - Requesting query... 
+[2024-11-03 17:59:21,253 ] google.cloud.bigquery.opentelemetry_tracing - DEBUG - This service is instrumented using OpenTelemetry. OpenTelemetry or one of its components could not be imported; please add compatible versions of opentelemetry-api and opentelemetry-instrumentation packages in order to get BigQuery Tracing data.
+[2024-11-03 17:59:21,254 ] urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+[2024-11-03 17:59:21,261 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): bigquery.googleapis.com:443
+[2024-11-03 17:59:24,580 ] urllib3.connectionpool - DEBUG - https://bigquery.googleapis.com:443 "POST /bigquery/v2/projects/geocode-345718/queries?prettyPrint=false HTTP/11" 200 None
+[2024-11-03 17:59:30,939 ] urllib3.connectionpool - DEBUG - https://bigquery.googleapis.com:443 "GET /bigquery/v2/projects/geocode-345718/jobs/job_wdFITMnd8lDlFHv2t5bEpEYMqJW2?projection=full&location=US&prettyPrint=false HTTP/11" 200 None
+[2024-11-03 17:59:31,001 ] pandas_gbq.query - DEBUG - Query done.
+
+[2024-11-03 17:59:31,383 ] urllib3.connectionpool - DEBUG - https://bigquery.googleapis.com:443 "GET /bigquery/v2/projects/geocode-345718/datasets/_c16a6afdb9763f79a2aaa849fb4a8d49b9adfe63/tables/anonacfeb8f5aaaa8cd2f4b045f5781e4f9301d1b71899d896cf5006c50ae00b6e45?prettyPrint=false HTTP/11" 200 None
+[2024-11-03 17:59:33,355 ] urllib3.connectionpool - DEBUG - https://bigquery.googleapis.com:443 "GET /bigquery/v2/projects/geocode-345718/queries/job_wdFITMnd8lDlFHv2t5bEpEYMqJW2?pageToken=BHH4T5XSSIAQAAASA4EAAEEAQCAAKGQKBD2Y6AIQ737777YHECYK4FKKTMBAU3AKDEFA4Z3FN5RW6ZDFFUZTINJXGE4BC3DBO2U7KAAAAAJCSX3DGE3GCNTBMZSGEOJXGYZWMNZZMEZGCYLBHA2DSZTCGRQTQZBUHFRDSYLEMZSTMMY2EQYGCNTCG4YTIMJNMY3TENBNGQ2WCYRNHA2WIMBNGQ2GGNBRGEZDSYRVGU4RERDBNZXW4YLDMZSWEODGGVQWCYLBHBRWIMTGGRRDANBVMY2TOOBRMU2GMOJTGAYWIMLCG4YTQOJZMQ4DSNTDMY2TAMBWMM2TAYLFGAYGENTFGQ2RUZLBMNTGKYRYMY2WCYLBME4GGZBSMY2GEMBUGVTDKNZYGFSTIZRZGMYDCZBRMI3TCOBZHFSDQOJWMNTDKMBQGZRTKMDBMUYDAYRWMU2DKIZSHA4DAZBYGVRS2NTBGM2S2NBWGJSC2YRTMJSC2ZTCME3DQYRXG5RGENBQ&fields=jobReference%2CtotalRows%2CpageToken%2Crows&location=US&formatOptions.useInt64Timestamp=True&prettyPrint=false HTTP/11" 200 None
+[2024-11-03 17:59:34,715 ] pandas_gbq.gbq - DEBUG - Got 25461 rows.
+
+[2024-11-03 17:59:34,715 ] pandas_gbq.gbq - INFO - Total time taken 13.46 s.
+Finished at 2024-11-03 17:59:34.
+[2024-11-03 17:59:34,715 ] root - INFO - Fetched the dataset from BigQuery as dataframe
+[2024-11-03 17:59:35,235 ] root - INFO - Saved the full dataset to feature_store/real_estate.csv
+[2024-11-03 17:59:35,235 ] root - INFO - Train test split initiated
+[2024-11-03 17:59:35,774 ] root - INFO - Ingestion of the data is completed
+[2024-11-03 17:59:36,063 ] root - INFO - Split training and test input data
+[2024-11-03 17:59:36,064 ] root - INFO - Training Random Forest
+[2024-11-03 17:59:38,745 ] root - INFO - Top 8 features for Random Forest: ['feature_1', 'feature_7', 'feature_3', 'feature_9', 'feature_8', 'feature_5', 'feature_0', 'feature_4']
+[2024-11-03 17:59:38,745 ] root - INFO - Training Decision Tree
+[2024-11-03 17:59:38,786 ] root - INFO - Top 8 features for Decision Tree: ['feature_1', 'feature_9', 'feature_3', 'feature_7', 'feature_8', 'feature_5', 'feature_0', 'feature_2']
+[2024-11-03 17:59:38,786 ] root - INFO - Training Gradient Boosting
+[2024-11-03 17:59:39,595 ] root - INFO - Top 8 features for Gradient Boosting: ['feature_7', 'feature_1', 'feature_3', 'feature_9', 'feature_5', 'feature_8', 'feature_2', 'feature_0']
+[2024-11-03 17:59:39,596 ] root - INFO - Training Linear Regression
+[2024-11-03 17:59:39,598 ] root - WARNING - Linear Regression does not support feature importances.
+[2024-11-03 17:59:39,598 ] root - INFO - Training XGBRegressor
+[2024-11-03 17:59:39,768 ] root - INFO - Top 8 features for XGBRegressor: ['feature_9', 'feature_1', 'feature_7', 'feature_5', 'feature_3', 'feature_8', 'feature_4', 'feature_0']
+[2024-11-03 17:59:39,768 ] root - INFO - Training CatBoosting Regressor
+[2024-11-03 17:59:43,029 ] root - INFO - Top 8 features for CatBoosting Regressor: ['feature_1', 'feature_3', 'feature_7', 'feature_8', 'feature_9', 'feature_5', 'feature_2', 'feature_0']
+[2024-11-03 17:59:43,029 ] root - INFO - Training AdaBoost Regressor
+[2024-11-03 17:59:43,272 ] root - INFO - Top 8 features for AdaBoost Regressor: ['feature_5', 'feature_3', 'feature_9', 'feature_1', 'feature_8', 'feature_0', 'feature_7', 'feature_4']
+[2024-11-03 17:59:43,272 ] root - INFO - Evaluating model: Random Forest
+[2024-11-03 17:59:43,272 ] root - WARNING - No parameters provided for Random Forest. Using default model.
+[2024-11-03 17:59:45,774 ] root - INFO - Random Forest - Train R2: 0.9875282315576539, Test R2: 0.9042723726883166
+[2024-11-03 17:59:45,774 ] root - INFO - Evaluating model: Decision Tree
+[2024-11-03 17:59:45,774 ] root - WARNING - No parameters provided for Decision Tree. Using default model.
+[2024-11-03 17:59:45,812 ] root - INFO - Decision Tree - Train R2: 0.9999804826794693, Test R2: 0.8311150282698803
+[2024-11-03 17:59:45,812 ] root - INFO - Evaluating model: Gradient Boosting
+[2024-11-03 17:59:45,812 ] root - WARNING - No parameters provided for Gradient Boosting. Using default model.
+[2024-11-03 17:59:46,582 ] root - INFO - Gradient Boosting - Train R2: 0.819575381006346, Test R2: 0.7689969476608569
+[2024-11-03 17:59:46,582 ] root - INFO - Evaluating model: Linear Regression
+[2024-11-03 17:59:46,582 ] root - WARNING - No parameters provided for Linear Regression. Using default model.
+[2024-11-03 17:59:46,587 ] root - INFO - Linear Regression - Train R2: 0.34920739317988925, Test R2: 0.45103950803761694
+[2024-11-03 17:59:46,587 ] root - INFO - Evaluating model: XGBRegressor
+[2024-11-03 17:59:46,587 ] root - WARNING - No parameters provided for XGBRegressor. Using default model.
+[2024-11-03 17:59:46,742 ] root - INFO - XGBRegressor - Train R2: 0.9921156598366457, Test R2: 0.9047028821527661
+[2024-11-03 17:59:46,742 ] root - INFO - Evaluating model: CatBoosting Regressor
+[2024-11-03 17:59:46,742 ] root - WARNING - No parameters provided for CatBoosting Regressor. Using default model.
+[2024-11-03 17:59:49,879 ] root - INFO - CatBoosting Regressor - Train R2: 0.9683545674735481, Test R2: 0.8967083238957241
+[2024-11-03 17:59:49,879 ] root - INFO - Evaluating model: AdaBoost Regressor
+[2024-11-03 17:59:49,879 ] root - WARNING - No parameters provided for AdaBoost Regressor. Using default model.
+[2024-11-03 17:59:50,057 ] root - INFO - AdaBoost Regressor - Train R2: 0.5184565423448311, Test R2: 0.2918502769383813
+[2024-11-03 17:59:50,057 ] root - INFO - Best found model using top features: XGBRegressor
+[2024-11-03 17:59:50,057 ] root - INFO - Entered the save_object method of utils
+[2024-11-03 17:59:50,080 ] root - INFO - Exited the save_object method of utils
+[2024-11-03 17:59:50,095 ] root - INFO - Pipeline execution completed successfully

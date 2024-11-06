@@ -1,0 +1,26 @@
+[2024-11-03 19:38:49,794 ] root - INFO - Entered the data ingestion method or component
+[2024-11-03 19:38:49,924 ] google.auth._default - DEBUG - Checking geocode-345718-d1551db2f8c6.json for explicit credentials as part of auth process...
+[2024-11-03 19:38:49,925 ] pydata_google_auth.auth - DEBUG - Error getting default credentials: File geocode-345718-d1551db2f8c6.json was not found.
+[2024-11-03 19:38:49,925 ] google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+[2024-11-03 19:38:49,930 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+[2024-11-03 19:38:50,488 ] urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+[2024-11-03 19:38:50,489 ] pandas_gbq.query - DEBUG - Requesting query... 
+[2024-11-03 19:38:50,490 ] google.cloud.bigquery.opentelemetry_tracing - DEBUG - This service is instrumented using OpenTelemetry. OpenTelemetry or one of its components could not be imported; please add compatible versions of opentelemetry-api and opentelemetry-instrumentation packages in order to get BigQuery Tracing data.
+[2024-11-03 19:38:50,490 ] urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+[2024-11-03 19:38:50,491 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): bigquery.googleapis.com:443
+[2024-11-03 19:38:53,854 ] urllib3.connectionpool - DEBUG - https://bigquery.googleapis.com:443 "POST /bigquery/v2/projects/geocode-345718/queries?prettyPrint=false HTTP/11" 200 None
+[2024-11-03 19:38:59,676 ] urllib3.connectionpool - DEBUG - https://bigquery.googleapis.com:443 "GET /bigquery/v2/projects/geocode-345718/jobs/job_hCnnahzr5gumHhUi9CU0By8-ClOn?projection=full&location=US&prettyPrint=false HTTP/11" 200 None
+[2024-11-03 19:38:59,730 ] pandas_gbq.query - DEBUG - Query done.
+
+[2024-11-03 19:39:00,136 ] urllib3.connectionpool - DEBUG - https://bigquery.googleapis.com:443 "GET /bigquery/v2/projects/geocode-345718/datasets/_c16a6afdb9763f79a2aaa849fb4a8d49b9adfe63/tables/anonacfeb8f5aaaa8cd2f4b045f5781e4f9301d1b71899d896cf5006c50ae00b6e45?prettyPrint=false HTTP/11" 200 None
+[2024-11-03 19:39:02,053 ] urllib3.connectionpool - DEBUG - https://bigquery.googleapis.com:443 "GET /bigquery/v2/projects/geocode-345718/queries/job_hCnnahzr5gumHhUi9CU0By8-ClOn?pageToken=BHR54UPTSIAQAAASA4EAAEEAQCAAKGQKBD2Y6AIQ737777YHECYK4FKKTMBAU3AKDEFA4Z3FN5RW6ZDFFUZTINJXGE4BC3DBO2U7KAAAAAJCSX3DGE3GCNTBMZSGEOJXGYZWMNZZMEZGCYLBHA2DSZTCGRQTQZBUHFRDSYLEMZSTMMY2EQYGCNTCG4YTIMJNMY3TENBNGQ2WCYRNHA2WIMBNGQ2GGNBRGEZDSYRVGU4RERDBNZXW4YLDMZSWEODGGVQWCYLBHBRWIMTGGRRDANBVMY2TOOBRMU2GMOJTGAYWIMLCG4YTQOJZMQ4DSNTDMY2TAMBWMM2TAYLFGAYGENTFGQ2RUZLBMNTGKYRYMY2WCYLBME4GGZBSMY2GEMBUGVTDKNZYGFSTIZRZGMYDCZBRMI3TCOBZHFSDQOJWMNTDKMBQGZRTKMDBMUYDAYRWMU2DKIZSHA4DAZBYGVRS2NTBGM2S2NBWGJSC2YRTMJSC2ZTCME3DQYRXG5RGENBQ&fields=jobReference%2CtotalRows%2CpageToken%2Crows&location=US&formatOptions.useInt64Timestamp=True&prettyPrint=false HTTP/11" 200 None
+[2024-11-03 19:39:03,443 ] pandas_gbq.gbq - DEBUG - Got 25461 rows.
+
+[2024-11-03 19:39:03,443 ] pandas_gbq.gbq - INFO - Total time taken 12.95 s.
+Finished at 2024-11-03 19:39:03.
+[2024-11-03 19:39:03,443 ] root - INFO - Fetched the dataset from BigQuery as dataframe
+[2024-11-03 19:39:03,965 ] root - INFO - Saved the full dataset to feature_store/real_estate.csv
+[2024-11-03 19:39:03,965 ] root - INFO - Train test split initiated
+[2024-11-03 19:39:04,512 ] root - INFO - Ingestion of the data is completed
+[2024-11-03 19:39:04,691 ] root - INFO - Columns after filtering and cleaning: ['days_on_zillow', 'zestimate', 'rent_zestimate', 'area', 'beds', 'baths', 'price_change', 'tax_assessed_value', 'lot_area_value', 'home_type', 'price']
+[2024-11-03 19:39:04,706 ] root - INFO - Final input features: ['days_on_zillow', 'zestimate', 'rent_zestimate', 'area', 'beds', 'baths', 'price_change', 'tax_assessed_value', 'lot_area_value', 'home_type']

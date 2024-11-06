@@ -1,0 +1,30 @@
+[2024-11-03 07:30:06,380 ] root - INFO - Entered the data ingestion method or component
+[2024-11-03 07:30:07,861 ] google.auth._default - DEBUG - Checking geocode-345718-d1551db2f8c6.json for explicit credentials as part of auth process...
+[2024-11-03 07:30:07,863 ] pydata_google_auth.auth - DEBUG - Error getting default credentials: File geocode-345718-d1551db2f8c6.json was not found.
+[2024-11-03 07:30:07,929 ] google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+[2024-11-03 07:30:07,976 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+[2024-11-03 07:30:08,571 ] urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+[2024-11-03 07:30:08,576 ] pandas_gbq.query - DEBUG - Requesting query... 
+[2024-11-03 07:30:08,577 ] google.cloud.bigquery.opentelemetry_tracing - DEBUG - This service is instrumented using OpenTelemetry. OpenTelemetry or one of its components could not be imported; please add compatible versions of opentelemetry-api and opentelemetry-instrumentation packages in order to get BigQuery Tracing data.
+[2024-11-03 07:30:08,578 ] urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+[2024-11-03 07:30:08,584 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): bigquery.googleapis.com:443
+[2024-11-03 07:30:17,137 ] urllib3.connectionpool - DEBUG - https://bigquery.googleapis.com:443 "POST /bigquery/v2/projects/geocode-345718/queries?prettyPrint=false HTTP/11" 200 None
+[2024-11-03 07:30:22,634 ] urllib3.connectionpool - DEBUG - https://bigquery.googleapis.com:443 "GET /bigquery/v2/projects/geocode-345718/jobs/job_tlo6DLUNYi-yx4b8KEEY6IVtMzJ1?projection=full&location=US&prettyPrint=false HTTP/11" 200 None
+[2024-11-03 07:30:22,713 ] pandas_gbq.query - DEBUG - Query done.
+
+[2024-11-03 07:30:23,135 ] urllib3.connectionpool - DEBUG - https://bigquery.googleapis.com:443 "GET /bigquery/v2/projects/geocode-345718/datasets/_c16a6afdb9763f79a2aaa849fb4a8d49b9adfe63/tables/anonacfeb8f5aaaa8cd2f4b045f5781e4f9301d1b71899d896cf5006c50ae00b6e45?prettyPrint=false HTTP/11" 200 None
+[2024-11-03 07:30:25,240 ] urllib3.connectionpool - DEBUG - https://bigquery.googleapis.com:443 "GET /bigquery/v2/projects/geocode-345718/queries/job_tlo6DLUNYi-yx4b8KEEY6IVtMzJ1?pageToken=BHH45NXQSIAQAAASA4EAAEEAQCAAKGQKBD2Y6AIQ737777YHECYK4FKKTMBAU3AKDEFA4Z3FN5RW6ZDFFUZTINJXGE4BC3DBO2U7KAAAAAJCSX3DGE3GCNTBMZSGEOJXGYZWMNZZMEZGCYLBHA2DSZTCGRQTQZBUHFRDSYLEMZSTMMY2EQYGCNTCG4YTIMJNMY3TENBNGQ2WCYRNHA2WIMBNGQ2GGNBRGEZDSYRVGU4RERDBNZXW4YLDMZSWEODGGVQWCYLBHBRWIMTGGRRDANBVMY2TOOBRMU2GMOJTGAYWIMLCG4YTQOJZMQ4DSNTDMY2TAMBWMM2TAYLFGAYGENTFGQ2RUZLBMNTGKYRYMY2WCYLBME4GGZBSMY2GEMBUGVTDKNZYGFSTIZRZGMYDCZBRMI3TCOBZHFSDQOJWMNTDKMBQGZRTKMDBMUYDAYRWMU2DKIZSHA4DAZBYGVRS2NTBGM2S2NBWGJSC2YRTMJSC2ZTCME3DQYRXG5RGENBQ&fields=jobReference%2CtotalRows%2CpageToken%2Crows&location=US&formatOptions.useInt64Timestamp=True&prettyPrint=false HTTP/11" 200 None
+[2024-11-03 07:30:26,821 ] pandas_gbq.gbq - DEBUG - Got 25461 rows.
+
+[2024-11-03 07:30:26,821 ] pandas_gbq.gbq - INFO - Total time taken 18.25 s.
+Finished at 2024-11-03 07:30:26.
+[2024-11-03 07:30:26,822 ] root - INFO - Fetched the dataset from BigQuery as dataframe
+[2024-11-03 07:30:27,614 ] root - INFO - Saved the full dataset to feature_store/real_estate.csv
+[2024-11-03 07:30:27,614 ] root - INFO - Train test split initiated
+[2024-11-03 07:30:28,524 ] root - INFO - Ingestion of the data is completed
+[2024-11-03 07:30:28,528 ] root - ERROR - Pipeline execution failed
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\Python Projects\Real-Estate-MLOPs-Project\real_estate\components\data_ingestion.py", line 75, in run_pipeline
+    train_arr, test_arr, _ = self.data_transformation.initiate_data_transformation(train_data, test_data)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataTransformation' object has no attribute 'initiate_data_transformation'

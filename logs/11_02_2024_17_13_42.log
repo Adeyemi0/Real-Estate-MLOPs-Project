@@ -1,0 +1,44 @@
+[2024-11-02 17:13:43,480 ] root - INFO - Entered the data ingestion method or component
+[2024-11-02 17:13:44,644 ] google.auth._default - DEBUG - Checking geocode-345718-d1551db2f8c6.json for explicit credentials as part of auth process...
+[2024-11-02 17:13:44,645 ] pydata_google_auth.auth - DEBUG - Error getting default credentials: File geocode-345718-d1551db2f8c6.json was not found.
+[2024-11-02 17:13:44,645 ] pydata_google_auth.cache - DEBUG - Error loading credentials from C:\Users\HP\AppData\Roaming\pandas_gbq\bigquery_credentials.dat: [Errno 2] No such file or directory: 'C:\\Users\\HP\\AppData\\Roaming\\pandas_gbq\\bigquery_credentials.dat'
+[2024-11-02 17:13:44,692 ] requests_oauthlib.oauth2_session - DEBUG - Generated new state L7JSLq6uLWgbIsci0QleoXlCeOhfRD.
+[2024-11-02 17:14:01,095 ] google_auth_oauthlib.flow - INFO - "GET /?state=L7JSLq6uLWgbIsci0QleoXlCeOhfRD&code=4/0AVG7fiQYOcSkOA7Vwr4Gt0dv0Uop3nOY5c065aUaTrexoBEuptq6Dogog3l1ckZEuQ3afA&scope=https://www.googleapis.com/auth/bigquery HTTP/1.1" 200 65
+[2024-11-02 17:14:01,096 ] requests_oauthlib.oauth2_session - DEBUG - Encoding `client_id` "725825577420-unm2gnkiprugilg743tkbig250f4sfsj.apps.googleusercontent.com" with `client_secret` as Basic auth credentials.
+[2024-11-02 17:14:01,167 ] requests_oauthlib.oauth2_session - DEBUG - Requesting url https://oauth2.googleapis.com/token using method POST.
+[2024-11-02 17:14:01,167 ] requests_oauthlib.oauth2_session - DEBUG - Supplying headers {'Accept': 'application/json', 'Content-Type': 'application/x-www-form-urlencoded'} and data {'grant_type': 'authorization_code', 'code': '4/0AVG7fiQYOcSkOA7Vwr4Gt0dv0Uop3nOY5c065aUaTrexoBEuptq6Dogog3l1ckZEuQ3afA', 'redirect_uri': 'http://localhost:8080/'}
+[2024-11-02 17:14:01,168 ] requests_oauthlib.oauth2_session - DEBUG - Passing through key word arguments {'timeout': None, 'auth': <requests.auth.HTTPBasicAuth object at 0x000001654C91ABD0>, 'verify': None, 'proxies': None, 'cert': None}.
+[2024-11-02 17:14:01,172 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+[2024-11-02 17:14:02,290 ] urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+[2024-11-02 17:14:02,326 ] requests_oauthlib.oauth2_session - DEBUG - Request to fetch token completed with status 200.
+[2024-11-02 17:14:02,326 ] requests_oauthlib.oauth2_session - DEBUG - Request url was https://oauth2.googleapis.com/token
+[2024-11-02 17:14:02,326 ] requests_oauthlib.oauth2_session - DEBUG - Request headers were {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': 'application/json', 'Connection': 'keep-alive', 'Content-Type': 'application/x-www-form-urlencoded', 'Content-Length': '156', 'Authorization': 'Basic NzI1ODI1NTc3NDIwLXVubTJnbmtpcHJ1Z2lsZzc0M3RrYmlnMjUwZjRzZnNqLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tOjRocXplOXlJOGZ4U2hsczhlSldrZU1kSg=='}
+[2024-11-02 17:14:02,326 ] requests_oauthlib.oauth2_session - DEBUG - Request body was grant_type=authorization_code&code=4%2F0AVG7fiQYOcSkOA7Vwr4Gt0dv0Uop3nOY5c065aUaTrexoBEuptq6Dogog3l1ckZEuQ3afA&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2F
+[2024-11-02 17:14:02,326 ] requests_oauthlib.oauth2_session - DEBUG - Response headers were {'Expires': 'Mon, 01 Jan 1990 00:00:00 GMT', 'Date': 'Sat, 02 Nov 2024 16:13:12 GMT', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Content-Type': 'application/json; charset=utf-8', 'Vary': 'Origin, X-Origin, Referer', 'Content-Encoding': 'gzip', 'Server': 'scaffolding on HTTPServer2', 'X-XSS-Protection': '0', 'X-Frame-Options': 'SAMEORIGIN', 'X-Content-Type-Options': 'nosniff', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'Transfer-Encoding': 'chunked'} and content {
+  "access_token": "ya29.a0AeDClZAiAmsv5b_NGO25w-7rlVUcAxVI2eZAhC9cT8JmsTzlihd2U7unrIko3MNNV0XLYT3cUAmidNR9k80TdEfnT8LQCqJHDZ9_AgK0cwalFqgkGdALHJn1Kg_hG8U0jXdE_oz6obknzLsg-4HGCbehSeh4eV7mkdFEOOiWaCgYKAXsSARESFQHGX2MiYOQGt4g7NUvdlwHEa2tAkQ0175",
+  "expires_in": 3599,
+  "refresh_token": "1//03yVRsddKzdmjCgYIARAAGAMSNgF-L9Ir6Fog0kEdhegsllOejGtI-EseUt2K-clwjCda7P6qkDn0YUmP6gWUfhGpnWJdRIbh8w",
+  "scope": "https://www.googleapis.com/auth/bigquery",
+  "token_type": "Bearer"
+}.
+[2024-11-02 17:14:02,326 ] requests_oauthlib.oauth2_session - DEBUG - Invoking 0 token response hooks.
+[2024-11-02 17:14:02,326 ] requests_oauthlib.oauth2_session - DEBUG - Obtained token {'access_token': 'ya29.a0AeDClZAiAmsv5b_NGO25w-7rlVUcAxVI2eZAhC9cT8JmsTzlihd2U7unrIko3MNNV0XLYT3cUAmidNR9k80TdEfnT8LQCqJHDZ9_AgK0cwalFqgkGdALHJn1Kg_hG8U0jXdE_oz6obknzLsg-4HGCbehSeh4eV7mkdFEOOiWaCgYKAXsSARESFQHGX2MiYOQGt4g7NUvdlwHEa2tAkQ0175', 'expires_in': 3599, 'refresh_token': '1//03yVRsddKzdmjCgYIARAAGAMSNgF-L9Ir6Fog0kEdhegsllOejGtI-EseUt2K-clwjCda7P6qkDn0YUmP6gWUfhGpnWJdRIbh8w', 'scope': ['https://www.googleapis.com/auth/bigquery'], 'token_type': 'Bearer', 'expires_at': 1730567641.3269863}.
+[2024-11-02 17:14:02,355 ] pandas_gbq.query - DEBUG - Requesting query... 
+[2024-11-02 17:14:02,356 ] google.cloud.bigquery.opentelemetry_tracing - DEBUG - This service is instrumented using OpenTelemetry. OpenTelemetry or one of its components could not be imported; please add compatible versions of opentelemetry-api and opentelemetry-instrumentation packages in order to get BigQuery Tracing data.
+[2024-11-02 17:14:02,356 ] urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+[2024-11-02 17:14:02,410 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): bigquery.googleapis.com:443
+[2024-11-02 17:14:06,893 ] urllib3.connectionpool - DEBUG - https://bigquery.googleapis.com:443 "POST /bigquery/v2/projects/geocode-345718/queries?prettyPrint=false HTTP/11" 200 None
+[2024-11-02 17:14:11,908 ] urllib3.connectionpool - DEBUG - https://bigquery.googleapis.com:443 "GET /bigquery/v2/projects/geocode-345718/jobs/job_updax997Yo7HfVe5kBYJ9mM_1J5M?projection=full&location=US&prettyPrint=false HTTP/11" 200 None
+[2024-11-02 17:14:11,957 ] pandas_gbq.query - DEBUG - Query done.
+
+[2024-11-02 17:14:12,548 ] urllib3.connectionpool - DEBUG - https://bigquery.googleapis.com:443 "GET /bigquery/v2/projects/geocode-345718/datasets/_c16a6afdb9763f79a2aaa849fb4a8d49b9adfe63/tables/anon801e7897c9bac307de1e53fb92040d9878b652ba8dff3827fc6f4a340812e78d?prettyPrint=false HTTP/11" 200 None
+[2024-11-02 17:14:14,991 ] urllib3.connectionpool - DEBUG - https://bigquery.googleapis.com:443 "GET /bigquery/v2/projects/geocode-345718/queries/job_updax997Yo7HfVe5kBYJ9mM_1J5M?pageToken=BF6PLJXNSIAQAAASA4EAAEEAQCAAKGQKBD2Y6AIQ737777YHECYK4FKKTMBAU3AKDEFA4Z3FN5RW6ZDFFUZTINJXGE4BC3DBO2U7KAAAAAJCSX3DGE3GCNTBMZSGEOJXGYZWMNZZMEZGCYLBHA2DSZTCGRQTQZBUHFRDSYLEMZSTMMY2EQYGCNTCG4YTIMJNMY3TENBNGQ2WCYRNHA2WIMBNGQ2GGNBRGEZDSYRVGU4RERDBNZXW4OBQGFSTOOBZG5RTSYTBMMZTAN3EMUYWKNJTMZRDSMRQGQYGIOJYG44GENRVGJRGCODEMZTDGOBSG5TGGNTGGRQTGNBQHAYTEZJXHBSBUZJYGAYWKNZYHE3WGOLCMFRTGMBXMRSTCZJVGNTGEOJSGA2DAZBZHA3TQYRWGUZGEYJYMRTGMMZYGI3WMYZWMY2GCMZUGA4DCMTFG44GIIZWGVRGGYLDMM3S2ZDCGQYS2NBSMI4S2OLCMM3S2ZBVGMYTKNRXMYZTGZDC&fields=jobReference%2CtotalRows%2CpageToken%2Crows&location=US&formatOptions.useInt64Timestamp=True&prettyPrint=false HTTP/11" 200 None
+[2024-11-02 17:14:17,082 ] pandas_gbq.gbq - DEBUG - Got 24846 rows.
+
+[2024-11-02 17:14:17,083 ] pandas_gbq.gbq - INFO - Total time taken 14.73 s.
+Finished at 2024-11-02 17:14:17.
+[2024-11-02 17:14:17,083 ] root - INFO - Fetched the dataset from BigQuery as dataframe
+[2024-11-02 17:14:19,566 ] root - INFO - Saved the full dataset to feature_store/real_estate.csv
+[2024-11-02 17:14:19,566 ] root - INFO - Train-test split initiated
+[2024-11-02 17:14:21,933 ] root - INFO - Ingestion of the data is completed
+[2024-11-02 17:14:21,972 ] root - INFO - Data ingestion completed successfully

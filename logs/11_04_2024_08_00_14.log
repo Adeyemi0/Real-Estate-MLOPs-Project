@@ -1,0 +1,109 @@
+[2024-11-04 08:00:21,070 ] werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.165.98:5000
+[2024-11-04 08:00:21,070 ] werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-11-04 08:00:27,554 ] root - INFO - Entered the load_object method of utils
+[2024-11-04 08:00:28,809 ] root - INFO - Exited the load_object method of utils
+[2024-11-04 08:00:28,809 ] root - INFO - Entered the load_object method of utils
+[2024-11-04 08:00:28,848 ] root - INFO - Exited the load_object method of utils
+[2024-11-04 08:00:28,849 ] app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\Python Projects\Real-Estate-MLOPs-Project\real_estate\pipeline\prediction_pipeline.py", line 23, in predict
+    data_scaled = preprocessor.transform(features)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\sklearn\utils\_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\sklearn\preprocessing\_data.py", line 1045, in transform
+    X = self._validate_data(
+        ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\sklearn\base.py", line 608, in _validate_data
+    self._check_feature_names(X, reset=reset)
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\sklearn\base.py", line 535, in _check_feature_names
+    raise ValueError(message)
+ValueError: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- price_change
+- rent_zestimate
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\Python Projects\Real-Estate-MLOPs-Project\app.py", line 40, in predict_datapoint
+    results=predict_pipeline.predict(pred_df)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\Python Projects\Real-Estate-MLOPs-Project\real_estate\pipeline\prediction_pipeline.py", line 28, in predict
+    raise realEstateException(e, sys)
+real_estate.exception.realEstateException: Error occurred python script name [C:\Users\HP\Documents\Python Projects\Real-Estate-MLOPs-Project\real_estate\pipeline\prediction_pipeline.py] line number [23] error message [The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- price_change
+- rent_zestimate
+]
+[2024-11-04 08:00:28,964 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 08:00:28] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2024-11-04 08:00:36,681 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 08:00:36] "GET / HTTP/1.1" 200 -
+[2024-11-04 08:00:36,724 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 08:00:36] "[33mGET /style.css HTTP/1.1[0m" 404 -
+[2024-11-04 08:01:03,462 ] root - INFO - Entered the load_object method of utils
+[2024-11-04 08:01:03,471 ] root - INFO - Exited the load_object method of utils
+[2024-11-04 08:01:03,471 ] root - INFO - Entered the load_object method of utils
+[2024-11-04 08:01:03,473 ] root - INFO - Exited the load_object method of utils
+[2024-11-04 08:01:03,473 ] app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\Python Projects\Real-Estate-MLOPs-Project\real_estate\pipeline\prediction_pipeline.py", line 23, in predict
+    data_scaled = preprocessor.transform(features)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\sklearn\utils\_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\sklearn\preprocessing\_data.py", line 1045, in transform
+    X = self._validate_data(
+        ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\sklearn\base.py", line 608, in _validate_data
+    self._check_feature_names(X, reset=reset)
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\sklearn\base.py", line 535, in _check_feature_names
+    raise ValueError(message)
+ValueError: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- price_change
+- rent_zestimate
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\envs\realEstate\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\Python Projects\Real-Estate-MLOPs-Project\app.py", line 40, in predict_datapoint
+    results=predict_pipeline.predict(pred_df)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\Python Projects\Real-Estate-MLOPs-Project\real_estate\pipeline\prediction_pipeline.py", line 28, in predict
+    raise realEstateException(e, sys)
+real_estate.exception.realEstateException: Error occurred python script name [C:\Users\HP\Documents\Python Projects\Real-Estate-MLOPs-Project\real_estate\pipeline\prediction_pipeline.py] line number [23] error message [The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- price_change
+- rent_zestimate
+]
+[2024-11-04 08:01:03,476 ] werkzeug - INFO - 127.0.0.1 - - [04/Nov/2024 08:01:03] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
