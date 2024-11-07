@@ -25,7 +25,6 @@ Access the deployed application at: [Real Estate Price Prediction App](https://z
 - **Packages**:
 - **For Web Framework Requirements**: pip install -r requirements.txt
 - **Scraper Github**: https://github.com/Adeyemi0/zillow_scraper
-  ```bash
 
 ## Data Schema
 
