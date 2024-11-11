@@ -22,7 +22,7 @@ Access the deployed application at: [Real Estate Price Prediction App](https://z
 ## Resources Used
 
 - **Python Version**: 3.8
-- **Packages**: pandas, NumPy, Matplotlib, datetime, seaborn
+- **Packages**: pandas, NumPy, Matplotlib, datetime, seaborn, sciki-Learn
 - **For Web Framework Requirements**: pip install -r requirements.txt
 - **Scraper Github**: https://github.com/Adeyemi0/zillow_scraper
 
